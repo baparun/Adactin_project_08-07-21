@@ -18,7 +18,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features = "src\\test\\java\\com\\adactin\\feature\\Adactin.feature",
                  glue ="com\\adactin\\stepdefinition",
                  monochrome = true, //To avoid special characters
-                // tags="~@arun" , //  tags = {"@arun , @Arun1"}
+                 tags="@arun" , //  tags = {"@arun , @Arun1"}
                 // format  = {"pretty","html:test-outout","json:json_output/cucumber.json","com.cucumber.listener.ExtentCucumberFormatter:Reports/ExtentReport.html"},
                  dryRun=false,
                  plugin={"pretty","com.cucumber.listener.ExtentCucumberFormatter:Reports/ExtentReport.html",
